@@ -15,7 +15,11 @@ export default class HomeScreen extends React.Component {
            </CardItem>
          </Card>
          <Button  full
-           onPress={() => this.props.navigation.navigate('Details')}>
+           onPress={() => this.props.navigation.navigate('Details',
+           {
+             itemId: 86,
+             otherParam: 'anything you want here',
+           })}>
            <Text>Go to Details</Text>
          </Button>
         </Content>
