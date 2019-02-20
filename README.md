@@ -26,3 +26,6 @@ see this [diff](https://github.com/lubaochuan/react-navigation/commit/4c7b36f020
 Pass data to DetailsScreen via navigation parameters.
 
 see this [diff](https://github.com/lubaochuan/react-navigation/commit/17989bc3cda12a4f37670cbe1ea469b33af1797b) for the solution.
+
+# Step 4
+Set and update screen titles.

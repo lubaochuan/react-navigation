@@ -4,6 +4,12 @@ import { Text } from "react-native"
 import { Container, Content, Card, CardItem, Body, Button } from "native-base"
 
 export default class DetailsScreen extends React.Component {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: navigation.getParam('otherParam', 'A Nested Details Screen'),
+    }
+  }
+
   render() {
     const { navigation } = this.props;
     const itemId = navigation.getParam('itemId', 'NO-ID');
@@ -38,6 +44,12 @@ export default class DetailsScreen extends React.Component {
            style={{ marginTop: 10 }}
            onPress={() => this.props.navigation.goBack()}>
            <Text>Go back</Text>
+         </Button>
+         <Button  full
+           style={{ marginTop: 10 }}
+           onPress={() => this.props.navigation.setParams(
+             {otherParam: 'Updated!'})}>
+           <Text>Update the title</Text>
          </Button>
         </Content>
       </Container>

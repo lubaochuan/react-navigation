@@ -3,6 +3,10 @@ import { Text } from "react-native"
 import { Container, Content, Card, CardItem, Body, Button } from "native-base"
 
 export default class HomeScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Home',
+  }
+
   render() {
     return (
       <Container>
