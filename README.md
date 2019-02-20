@@ -14,3 +14,5 @@ yarn add native-base --save
 
 # Step 1
 Create a HomeScreen and use a stack navigator to route to it.
+
+See this [diff](https://github.com/lubaochuan/react-navigation/commit/5c11c9aca0bb340f4c3831ff5c5dbd3788f8974a) for the solution.
