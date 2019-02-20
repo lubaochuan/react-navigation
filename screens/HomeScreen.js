@@ -1,10 +1,25 @@
 import React from "react"
 import { Text } from "react-native"
-import { Container, Content, Card, CardItem, Body, Button } from "native-base"
+import { Container, Content, Card, CardItem, Body, Button, Icon } from "native-base"
 
 export default class HomeScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Home',
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: 'Home',
+      headerRight:
+        <Button dark transparent
+          onPress={navigation.getParam('gotoSettings')}>
+          <Icon name='cog' />
+        </Button>
+    }
+  }
+
+  componentDidMount() {
+    this.props.navigation.setParams({ gotoSettings: this._gotoSettings })
+  }
+
+  _gotoSettings = ()=>{
+    this.props.navigation.navigate('Settings')
   }
 
   render() {

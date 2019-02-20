@@ -10,6 +10,7 @@ expo init react-navigation --template blank@sdk-32 --yarn
 cd react-navigation
 yarn add react-navigation --save
 yarn add native-base --save
+yarn add @expo/vector-icons --save
 ```
 
 # Step 1
@@ -31,3 +32,11 @@ see this [diff](https://github.com/lubaochuan/react-navigation/commit/17989bc3cd
 Set and update screen titles.
 
 see this [diff](https://github.com/lubaochuan/react-navigation/commit/4f68a6053d5d7c1f01e94867b1a0908327e12133) for the solution.
+
+# Step 5
+Add header buttons. We will add a header button to the HomeScreen and
+link it to the SettingsScreen. Please make sure you have run the following in your project
+directory:
+```
+yarn add @expo/vector-icons --save
+```
