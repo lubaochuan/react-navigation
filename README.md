@@ -13,4 +13,4 @@ yarn add native-base --save
 ```
 
 # Step 1
-Create a stack navigator.
+Create a HomeScreen and use a stack navigator to route to it.
