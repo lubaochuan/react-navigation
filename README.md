@@ -29,3 +29,5 @@ see this [diff](https://github.com/lubaochuan/react-navigation/commit/17989bc3cd
 
 # Step 4
 Set and update screen titles.
+
+see this [diff](https://github.com/lubaochuan/react-navigation/commit/4f68a6053d5d7c1f01e94867b1a0908327e12133) for the solution.
