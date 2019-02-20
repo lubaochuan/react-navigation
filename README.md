@@ -19,3 +19,5 @@ See this [diff](https://github.com/lubaochuan/react-navigation/commit/5c11c9aca0
 
 # Step 2
 Create a DetailsScreen and navigate to it from the HomeScreen.
+
+see this [diff](https://github.com/lubaochuan/react-navigation/commit/4c7b36f020345283605d3dd3d6316ea863b1a7be) for the solution.
