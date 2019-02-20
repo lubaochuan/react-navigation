@@ -1,6 +1,6 @@
 import React from "react"
 import { Text } from "react-native"
-import { Container, Content, Card, CardItem, Body } from "native-base"
+import { Container, Content, Card, CardItem, Body, Button } from "native-base"
 
 export default class HomeScreen extends React.Component {
   render() {
@@ -14,6 +14,10 @@ export default class HomeScreen extends React.Component {
              </Body>
            </CardItem>
          </Card>
+         <Button  full
+           onPress={() => this.props.navigation.navigate('Details')}>
+           <Text>Go to Details</Text>
+         </Button>
         </Content>
       </Container>
     )
