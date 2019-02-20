@@ -40,3 +40,5 @@ directory:
 ```
 yarn add @expo/vector-icons --save
 ```
+
+see this [diff](https://github.com/lubaochuan/react-navigation/commit/e475fa80ec79631ba9090f56e913d1ebdfb6309b) for the solution.
