@@ -59,3 +59,6 @@ Create a full-screen modal using nested navigators.
 Note that we have to provide the header, as needed, for the modal screen because the `HeaderMode` is set `none` so that we don't show the back button from the navigator. The modal can be dismissed by swiping its header downward.
 
 see this [diff](https://github.com/lubaochuan/react-navigation/commit/6ee736b24385f99cbdb40afe2d996a6923280944) for the solution.
+
+# Step 7
+Add a bottom tab navigator.

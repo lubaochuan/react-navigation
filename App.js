@@ -1,10 +1,22 @@
 import React from 'react'
-import { createStackNavigator, createAppContainer } from "react-navigation"
+import { createStackNavigator, createAppContainer,
+  createBottomTabNavigator } from "react-navigation"
 
 import HomeScreen from "./screens/HomeScreen"
 import DetailsScreen from "./screens/DetailsScreen"
 import SettingsScreen from "./screens/SettingsScreen"
 import ModalScreen from "./screens/ModalScreen"
+import InfoScreen from "./screens/InfoScreen"
+
+const TabNavigator = createBottomTabNavigator({
+  Info: {
+    screen: InfoScreen
+  },
+  Settings: {
+    screen: SettingsScreen
+  }
+})
+
 
 const MainStack = createStackNavigator({
   Home: {
@@ -14,7 +26,7 @@ const MainStack = createStackNavigator({
     screen: DetailsScreen
   },
   Settings: {
-    screen: SettingsScreen
+    screen: TabNavigator
   }
 },
 {
