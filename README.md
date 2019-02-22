@@ -42,3 +42,18 @@ yarn add @expo/vector-icons --save
 ```
 
 see this [diff](https://github.com/lubaochuan/react-navigation/commit/e475fa80ec79631ba9090f56e913d1ebdfb6309b) for the solution.
+
+Note that this example demonstrates a pattern for giving a header button
+access to a function on the component instance using `params`. If you simply
+want to route to another screen the following will suffice:
+```
+<Button dark transparent
+  onPress={navigation.navigate('Settings')}>
+  <Icon name='cog' />
+</Button>
+```
+
+# Step 6
+Create a full-screen modal using nested navigators.
+
+Note that we have to provide the header, as needed, for the modal screen because the `HeaderMode` is set `none` so that we don't show the back button from the navigator. The modal can be dismissed by swiping its header downward.

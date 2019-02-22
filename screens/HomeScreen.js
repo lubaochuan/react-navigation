@@ -41,6 +41,11 @@ export default class HomeScreen extends React.Component {
            })}>
            <Text>Go to Details</Text>
          </Button>
+         <Button  full
+           style={{ marginTop: 10 }}
+           onPress={() => this.props.navigation.navigate('MyModal')}>
+           <Text>Go to ModalScreen</Text>
+         </Button>
         </Content>
       </Container>
     )
